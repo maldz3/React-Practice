@@ -19,7 +19,7 @@ const App = () => {
 
   const deleteUserHandler = (userId) => {
     setUsers(prevUsers => {
-      const updatedUsers = prevUsers.filter(user => user.id != userId);
+      const updatedUsers = prevUsers.filter(user => user.id !== userId);
       return updatedUsers;
     });
   };

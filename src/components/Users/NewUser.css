@@ -42,3 +42,7 @@
     border-radius: 12px;
     margin: 1rem;
   }
+
+  .new-user__action button:hover{
+    background-color: blueviolet ;
+  }
