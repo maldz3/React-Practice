@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 
 import Card from '../UI/Card';
 import ErrorModal from '../UI/ErrorModal';
+import Wrapper from '../Helper/Wrapper';
 
 import './NewUser.css';
 
@@ -59,7 +60,7 @@ const NewUser = (props) => {
     };
 
     return (
-        <div>
+        <Wrapper>
             {error && <ErrorModal title={error.title} message={error.message} onConfirm={errorHandler} />}
             <form onSubmit={onSubmitHandler}>
                 <Card className='new-user'>
@@ -88,7 +89,7 @@ const NewUser = (props) => {
                     </div> 
                 </Card>
             </form>
-        </div>
+        </Wrapper>
     )
 }
 
